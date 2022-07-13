@@ -12,7 +12,7 @@ To display the pixels array as an image, simply call
 imshow(uint8(pixels .* 255));
 ```
 
-Example for this can be seen [here](https://github.com/JanBulling/MatlabRayTracing/exercises/render_matrix_image.m).
+Example for this can be seen [here](https://github.com/JanBulling/MatlabRayTracing/blob/main/exercises/render_matrix_image.m).
 
 ## Basic Ray Tracing
 To test the ray tracing implementation, we can simply color a pixel differently, if a ray hits the sphere at this pixel.
@@ -22,9 +22,9 @@ $$a = rayDirection \cdot rayDirection$$
 $$b = 2 * (cameraPosition \cdot rayDirection)$$
 $$c = (cameraPosition \cdot cameraPosition) - radius^2$$
 
-You can see an example in matlab [here](https://github.com/JanBulling/MatlabRayTracing/exercises/basic_ray_tracing.m).
+You can see an example in matlab [here](https://github.com/JanBulling/MatlabRayTracing/blob/main/exercises/basic_ray_tracing.m).
 
 ## Sphere Ray Tracing
 The solutions of the quadratic equation are the distance from the ray origin (the "camera position") to the intersection point. The nearest intersection point is the first hit 
 of the objet. To color the object, you can for example take the dot product of the ray direction and the normal vector of the sphere at the hit point. An example like
-this can be seen [here](https://github.com/JanBulling/MatlabRayTracing/exercises/one_sphere_ray_tracing.m).
+this can be seen [here](https://github.com/JanBulling/MatlabRayTracing/blob/main/exercises/one_sphere_ray_tracing.m).
